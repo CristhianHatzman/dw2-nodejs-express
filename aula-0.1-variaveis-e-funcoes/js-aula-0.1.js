@@ -1,15 +1,23 @@
-// Comentários em JS
- /*Comentários em
- bloco com
- JS*/
-
  const nome = "Cristhian"
- let Nome 
  var cor = "Azul"
  var cor = "Amarelo"
  let cidade = "Registro"
- cidade = "Jacupiranga"
+     cidade = "Jacupiranga"
  
 const message = "Hello World! Iniciando estudos com JavaSript!"
- console.log(message)
+//  console.log(message)
 
+let metas = ["Passar de ano", "False"]
+// console.log(metas[0] + " " + metas[1])
+
+let meta = {
+    value: "Ler um livro todo mês",
+    checked: false
+}
+// console.log(meta.value, meta.checked)
+
+if (meta.checked == true) {
+    console.log("Meta concluida!")
+} else {
+    console.log("Meta não concluida!")
+}
