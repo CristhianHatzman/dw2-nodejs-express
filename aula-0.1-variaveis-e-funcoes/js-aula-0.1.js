@@ -10,9 +10,23 @@ var cor = "Amarelo";
 let cidade = "Registro";
 cidade = "Jacupiranga";
 
-// const message = "Hello World! Iniciando estudos com JavaSript!"
-// console.log(message)
+const message = "Hello World! Iniciando estudos com JavaSript!";
+console.log(message);
 
+let metas = ["Passar de ano", "False"];
+// console.log(metas[0] + " " + metas[1])
+
+let meta = {
+  value: "Ler um livro todo mês",
+  checked: false,
+};
+// console.log(meta.value, meta.checked)
+
+if (meta.checked == true) {
+  console.log("Meta concluida!");
+} else {
+  console.log("Meta não concluida!");
+}
 // typeof (esse comando exibira o tipo da variável);
 const estado = "SP";
 const idade = 18;
@@ -81,28 +95,28 @@ let dobro = function (x) {
 };
 
 // ARROW FUNCTION COM PARÂMETRO
-const Dobro = x => {
-    return x*2
-}
-console.log(`Função dobro com Arrow function. Resultado: ${Dobro(10)}`)
+const Dobro = (x) => {
+  return x * 2;
+};
+console.log(`Função dobro com Arrow function. Resultado: ${Dobro(10)}`);
 
 // ARROW FUNCTION COM MAIS DE UM PARÂMETRO
 const calc = (num1, operador, num2) => {
-    return eval(`${num1} ${operador} ${num2}`)
-}
-console.log(`O resultado da operação é: ${calc(6, '*', 6)}`)
+  return eval(`${num1} ${operador} ${num2}`);
+};
+console.log(`O resultado da operação é: ${calc(6, "*", 6)}`);
 
 // SIMPLIFICANDO ARROW FUNCTION
-const Calc = (num1, operador, num2) => eval(`${num1} ${operador} ${num2}`)
-console.log(`O resultado da operação é: ${Calc(6, '*', 10)}`)
+const Calc = (num1, operador, num2) => eval(`${num1} ${operador} ${num2}`);
+console.log(`O resultado da operação é: ${Calc(6, "*", 10)}`);
 
 // IIFE - Immediately Invoked Function Expression
 // FUNÇÃO IMEDIATA
-const iife = (function() {
-    console.log("Estou sendo executada imediatamente...")
-})()
+const iife = (function () {
+  console.log("Estou sendo executada imediatamente...");
+})();
 
 //IIFE COM PARAMETRO
-const start = (function(app) {
-    console.log(`Executando imediatamente o app ${app}.`)
-})("WhatsApp")
+const start = (function (app) {
+  console.log(`Executando imediatamente o app ${app}.`);
+})("WhatsApp");
