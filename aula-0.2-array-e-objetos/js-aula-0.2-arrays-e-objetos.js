@@ -27,3 +27,25 @@ console.log("Exibindo a lista através do FOR EACH COM INDICES...")
 Produtos.forEach((produto, c) => {
     console.log(`${c+1} - ${produto}`)
 })
+
+// Metodos de manipulação de vetores
+let vetor = ['Laranja', 'Maçã', 'Banana']
+console.log(`Nosso vetor é o ${vetor}`)
+vetor[3] = 'Morango'
+console.log(`Nosso vetor é o: ${vetor}`)
+
+// Método PUSH - Insere um novo elemento no final do vetor 
+vetor.push('Abacaxi')
+console.log(`Nosso vetor agora é o: ${vetor}`)
+
+// Método UNSHIFT - Insere novo elemento no inicio do vetor
+vetor[0] = 'Pera'
+console.log(`Nosso vetor agora é o: ${vetor}`)
+vetor.unshift('Laranja')
+console.log(`Nosso vetor agora é o: ${vetor}`)
+
+// Método LENGTH - Retorna o número de elementos de um vetor
+let numeros = [6,8,2,4,5,9,1]
+console.log(`Nossa lista de numeros é: ${numeros} o tamanho dela é ${numeros.length}!`)
+
+// Método SORT - Ordenar o vetor
