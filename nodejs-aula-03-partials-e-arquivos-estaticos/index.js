@@ -6,6 +6,8 @@ const app = express(); // Iniciando o Express
 // CONFIGURANDO A VIEW ENGINE - EJS
 app.set("view engine", "ejs");
 
+app.use(express.static("public"));
+
 // CRIANDO A ROTA PRINCIPAL (RAIZ) DO SITE
 // Método .get cria uma rota na aplicação
 // REQ -> Trata a requisão
@@ -22,15 +24,15 @@ app.get("/perfil", (req, res) => {
 // ROTA DE PRODUTOS
 app.get("/produtos/:produto?", (req, res) => {
   // Coletando o parâmetro da rota
-  const produto = req.params.produto
+  const produto = req.params.produto;
 
   //Array com lista de produtos
-  const produtos = ['Computador', 'Celular', 'Tablet', 'Notebook']
+  const produtos = ["Computador", "Celular", "Tablet", "Notebook"];
 
   res.render("produtos", {
     // Enviando variáveis produto para a página
-    produto : produto,
-    produtos : produtos
+    produto: produto,
+    produtos: produtos,
   });
 });
 
